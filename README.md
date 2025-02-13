@@ -1,5 +1,5 @@
 ﻿# FullStackApp-SigmaCode<br>
-#-----Instalacja----- <br>
+<h1>-----Instalacja----- </h1><br>
 #Wymagane programy:<br>
 -python(min. 3.8)<br>
 -node.js<br>
@@ -26,13 +26,13 @@ npm run dev - działa na http://localhost:5173/<br><br>
 
 Teraz po wejściu na hosta http://localhost:5173/ można testować projekt :)<br><br>
 
-#-----Opis implementacji i decyzji technicznych-----<br>
+<h2>-----Opis implementacji i decyzji technicznych-----</h2><br>
 Projekt to system ogłoszeniowy, który został stworzony w oparciu o Django REST Framework (DRF) jako backend oraz React + Tailwind CSS jako frontend. Celem było stworzenie wydajnej, elastycznej i intuicyjnej <br>aplikacji, umożliwiającej dodawanie, edycję, usuwanie oraz przeglądanie ogłoszeń. System obsługuje również przesyłanie zdjęć oraz posiada paginację, obsługę błędów oraz responsywny interfejs użytkownika.<br><br>
 
-#Backend–Django REST Framework<br>
+<h3>Backend–Django REST Framework</h3><br>
 Został zaimplementowany w Django(DRF).<br><br>
 
-Decyzje techniczne(w skrócie):<br><br>
+<h4>Decyzje techniczne(w skrócie):</h4><br><br>
 
 DRF-obsługa API<br>
 Model Advertisement–obsługuje tytuł, treść, status, kategorię, autora, kontakt oraz img<br>
@@ -50,10 +50,10 @@ GET	/api/advertisements/{id}/	Wyświetlanie pojedynczego ogłoszenia<br>
 PUT	/api/advertisements/{id}/	Edytuje ogłoszenie<br>
 DELETE	/api/advertisements/{id}/	Usuwa ogłoszenie<br><br>
 
-#Frontend–React + Tailwind CSS<br>
+<h3>Frontend–React + Tailwind CSS</h3><br>
 Został zbudowany w React+Tailwind CSS.<br><br>
 
-Decyzje techniczne(w skrócie):<br><br>
+<h4>Decyzje techniczne(w skrócie):</h4><br><br>
 
 Axios komunikacja z API–zapytania do backendu<br>
 React Router–nawigacja pomiędzy stronami<br>
@@ -63,18 +63,18 @@ Dwa różne formularze–implementacja dwóch podejść<br>
 Obsługa paginacji–dynamiczne ladowanie stron z wykorzystaniem parametrów URL.<br>
 Automatyczna aktualizacja listy po dodaniu/edycji/usunięciu ogłoszenia<br><br>
 
-#Obsługa błędów obejmuje:<br><br>
+<h4>Obsługa błędów obejmuje:</h4><br><br>
 
 Walidację formularzy-np. minimalna długość tytułu i treści.<br>
 Limit aktywnych ogłoszeń-max. 5 aktywnych.<br>
 Błędy sieciowe-np. brak połączenia z backendem.<br>
 
-#Wyświetlanie błędow<br><br>
+<h4>Wyświetlanie błędow</h4><br><br>
 
 Frontend-react-toastify<br>
 Backend-custom_exception_handler zwraca error_message.<br><br>
 
-#Responsywność:<br><br>
+<h4>Responsywność:</h4><br><br>
 
 Oparta na grid.<br>
 Formularze są skalowane i dostosowane do ekranów mobilnych.
