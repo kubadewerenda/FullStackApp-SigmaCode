@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+@layer utilities {
+  body {
+    @apply bg-gray-50;
+    background: linear-gradient(to bottom, #ffffff 5%, #ffffff 40%, #fffbe9 90%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  .header-bg {
+    @apply w-full relative py-5;
+    background: linear-gradient(to top, #ffffff 10%, #fef9c3 60%, #fffbe9 100%);
+    box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.5);
+  }
+
+  .header-tekst-l {
+    @apply font-semibold text-2xl text-gray-500;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .header-tekst-r {
+      @apply font-bold italic text-4xl text-red-800;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 6px rgba(255, 0, 0, 0.3);
+      background: linear-gradient(to right, #dc2626, #b91c1c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .blur-left {
+    background: linear-gradient(to right, rgba(156, 163, 175, 1), rgba(156, 163, 175, 0));
+  }
+
+  .blur-right {
+    background: linear-gradient(to left, rgba(156, 163, 175, 1), rgba(156, 163, 175, 0));
+  }
+
+  select {
+    @apply text-right border border-red-800 bg-gray-700 p-1 px-2 rounded font-serif text-sm text-white focus:outline-none;
+  }
+
+  input, textarea {
+    @apply border border-red-800 p-1 px-2 mb-2 w-full rounded font-serif text-sm text-blue-950 focus:outline-none;
+  }
+
+  .ads-title {
+    @apply font-serif text-4xl md:text-5xl font-medium text-center px-2 py-2 text-transparent bg-clip-text;
+    background-image: linear-gradient(to right, #2100b6, #89899e, #680101);
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .ad-style {
+    @apply min-h-[200px] sm:min-h-[250px] p-4 rounded-md shadow-2xl bg-white col-span-4 flex flex-col justify-between hover:scale-[1.01] hover:bg-yellow-50 transition duration-300 cursor-pointer;
+
+    background: radial-gradient(circle at top , rgba(255, 239, 186, 0.4) 10%, rgba(255, 255, 255, 0.8) 60%);
+}
+
+
+  .ad-title {
+    @apply text-2xl font-semibold text-red-800;
+  }
+
+  .ad-pub {
+    @apply text-sm text-gray-500 font-light;
+  }
+
+  .ad-img {
+    @apply max-h-[350px] max-w-full object-contain rounded mt-2 sm:mt-8;
+  }
+
+  .ad-content {
+    @apply text-gray-500 font-sans text-base text-left mt-2 md:mt-5;
+  }
+
+  .ad-category {
+    @apply text-sm text-gray-700 font-medium mt-2 md:mt-5;
+  }
+
+  .ad-author {
+    @apply text-sm text-red-800 font-light mt-2;
+  }
+
+  .ad-contact {
+    @apply text-sm text-gray-700 font-medium mt-2;
+  }
+
+  .form-blur {
+    @apply fixed inset-0 bg-gray-900 bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50;
+  }
+
+  .form-style {
+    @apply bg-gray-100 p-6 rounded shadow-2xl w-[95%] max-w-[600px] max-h-[80vh] overflow-y-auto;
+  }
+
+  .form-label {
+    @apply text-red-900 font-serif text-sm;
+  }
+
+  .form-edit-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  .submit-button {
+    @apply border-2 border-red-800 text-red-800 px-4 py-2 rounded-xl hover:scale-105 duration-300;
+  }
+
+  .cancel-button {
+    @apply border-2 border-red-800 bg-gray-600 text-white px-4 py-2 rounded-xl hover:bg-white hover:text-red-800 hover:scale-105 duration-300;
+  }
+
+  .reset-button {
+    @apply text-red-900 border-red-900 border-2 px-4 py-1 rounded font-serif text-sm hover:scale-105 hover:bg-slate-50 transition duration-300;
+  }
+
+  .page-num {
+    @apply px-3 py-1 mx-1 rounded hover:scale-105;
+  }
+  .page-switch {
+    @apply px-3 py-1 rounded hover:scale-[1.05] text-red-950 disabled:opacity-50 duration-300;
+  }
+}
