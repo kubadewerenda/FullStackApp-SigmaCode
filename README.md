@@ -1,27 +1,27 @@
-﻿# FullStackApp-SigmaCode
-# Instalacja 
-# Wymagane programy:
--python(min. 3.8)
--node.js
--git 
+﻿# FullStackApp-SigmaCode<br>
+# Instalacja <br>
+# Wymagane programy:<br>
+-python(min. 3.8)<br>
+-node.js<br>
+-git<br><br>
 
-Projekt odpalamy poprzez terminal(w moim przypadku vscode)
+Projekt odpalamy poprzez terminal(w moim przypadku vscode)<br><br>
 
-1.Sklonowanie repozytorium:
-git clone https://github.com/kubadewerenda/FullStackApp-SigmaCode.git
-cd FullStackApp-SigmaCode
+1.Sklonowanie repozytorium:<br>
+git clone https://github.com/kubadewerenda/FullStackApp-SigmaCode.git<br>
+cd FullStackApp-SigmaCode<br><br>
 
-2.Backend:
-cd backend
-python -m venv venv
-source venv/bin/activate - Linux/Mac
-venv\Scripts\activate - Windows
-pip install -r requirements.txt
-python manage.py runserver - działa na http://127.0.0.1:8000/
+2.Backend:<br>
+cd backend<br>
+python -m venv venv<br>
+source venv/bin/activate - Linux/Mac<br>
+venv\Scripts\activate - Windows<br>
+pip install -r requirements.txt<br>
+python manage.py runserver - działa na http://127.0.0.1:8000/<br><br>
 
-3.Frontend:
-cd frontend
-npm install
-npm run dev - działa na http://localhost:5173/
+3.Frontend:<br>
+cd frontend<br>
+npm install<br>
+npm run dev - działa na http://localhost:5173/<br><br>
 
-Teraz po wejściu na hosta http://localhost:5173/ można testować projekt :)
+Teraz po wejściu na hosta http://localhost:5173/ można testować projekt :)<br><br>
