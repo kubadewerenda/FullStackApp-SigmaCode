@@ -1,4 +1,4 @@
-﻿# FullStackApp-SigmaCode<br>
+﻿# SimpleFullStackApp
 <h1>-----Instalacja----- </h1><br>
 #Wymagane programy:<br>
 -python(min. 3.8)<br>
